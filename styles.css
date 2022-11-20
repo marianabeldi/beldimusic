@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('fonts/MonaSans.ttf') format('woff'),
+         url('fonts/MonaSans.woff2') format('woff2 supports variations'),
+         url('fonts/MonaSans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+
+}
+
+:root {
+    --bg-color: #021b36;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    background: #032b49 url(images/home-planets.svg);
+    background-size: cover;
+    color: var(--text-color);
+    font-family: 'Mona Sans', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: clamp(4rem, 10vw, 8rem); 
+    font-weight: 900;
+    font-stretch: 125%;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+main {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+footer a {
+    padding: 1rem;
+}
+footer .destacado {
+    flex: 1 1 100%;
+}
+a[class^="icon-"] svg {
+    height: 80px;
+    margin-top: 1rem;
+    width: 80px;
+  }
+
+a.icon-spotify:hover svg { stroke: #1DB954; }
+a.icon-instagram:hover svg { stroke: #E1306C; }
+a.icon-facebook:hover svg { stroke: #4267B2; }
+a.icon-tiktok:hover svg { stroke: #00f2ea; }
+a.icon-youtube:hover svg { stroke: #FF0000; }
+a.icon-apple:hover svg { stroke: #ccc; }
+a.beathey:hover svg { fill: #ccc; }
